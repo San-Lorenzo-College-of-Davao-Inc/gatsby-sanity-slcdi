@@ -1,4 +1,6 @@
-const config = {
+import type { GatsbyConfig } from "gatsby"
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `San Lorenzo College of Davao, Inc.`,
     description: `San Lorenzo College of Davao, Inc.`,
@@ -31,9 +33,9 @@ const config = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "assets/images/logo.png",
-        title: "San Lorenzo College of Davao, Inc.",
         name: `San Lorenzo College of Davao, Inc.`,
-        short_name: `San Lorenzo College of Davao, Inc.`,
+        short_name: `SLCDI`,
+        display: `standalone`,
       },
     },
   ],
