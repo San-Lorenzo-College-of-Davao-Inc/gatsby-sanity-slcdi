@@ -32,7 +32,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "assets/images/logo.png",
+        icon: "static/assets/images/logo.png",
         name: `San Lorenzo College of Davao, Inc.`,
         short_name: `SLCDI`,
         display: `standalone`,

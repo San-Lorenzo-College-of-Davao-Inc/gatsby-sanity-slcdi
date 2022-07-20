@@ -12,7 +12,8 @@ const HomePage = (props: Props) => {
 <>
           <Header />
           <Slider />
-          
+          <WhyUs />
+          <Programs />
           <Footer />
        </>
   )
