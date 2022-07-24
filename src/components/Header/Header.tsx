@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,9 +7,11 @@ import Nav from "react-bootstrap/Nav";
 import * as S from './Header.styles';
 import { Link } from "gatsby";
 
-type Props = {};
+type Props = {
+  small?: boolean;
+};
 
-const Header = (props: Props) => {
+const Header = ({ small = false }: Props) => {
   const [collapsed, setCollapsed] = React.useState(false);
 
   const ScrollEvent = () => {
@@ -20,7 +22,7 @@ const Header = (props: Props) => {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener("scroll", ScrollEvent);
     return () => {
       window.removeEventListener("scroll", ScrollEvent);
@@ -28,13 +30,13 @@ const Header = (props: Props) => {
   }, []);
 
   return (
-    <S.Wrapper className={collapsed ? `sticky` : ``}>
+    <S.Wrapper className={`${collapsed || small ? `sticky` : ``} ${small ? `small` : ``}`}>
       <Container className="header">
         <Row>
           <Col>
             <Navbar variant="light" fixed="top">
               <Container>
-                <Navbar.Brand href="/">
+                <Navbar.Brand to="/" as={Link}>
                   <img
                     alt=""
                     src="/assets/images/header-logo.png"

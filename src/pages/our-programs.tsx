@@ -10,9 +10,7 @@ type Props = {}
 const HomePage = (props: Props) => {
   return (
 <>
-          <Header />
-          <Slider />
-          <WhyUs />
+          <Header small={true} />
           <Programs />
           <Footer />
        </>

@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import FBWidget from "../FBWidget/FBWidget"
 
 type Props = {};
 
@@ -19,10 +20,16 @@ const Footer = (props: Props) => {
           </div>
         </Col>
         <Col>
-          <div>Footer</div>
+        <FBWidget />
         </Col>
         <Col>
-          <div>Footer</div>
+          <h3>GET IN TOUCH</h3>
+          <p>Lorenzville Homes, Ulas, Brgy. Talomo, Davao City</p>
+
+<p>+63 (82) 233-0848</p>
+
+<p>slcd_official@slcd.edu.ph</p>
+<p>www.slcd.edu.ph</p>
         </Col>
       </Row>
     </Container>

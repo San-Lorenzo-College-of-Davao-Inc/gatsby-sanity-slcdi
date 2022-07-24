@@ -14,13 +14,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: "48t446o6",
-        dataset: "production",
-      },
-    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",

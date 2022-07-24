@@ -9,3 +9,17 @@ export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({ element }) =
     </PageLayout>
   )
 }
+
+export const onRouteUpdate: GatsbyBrowser["onRouteUpdate"] = () => {
+ 
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  
+
+}
+

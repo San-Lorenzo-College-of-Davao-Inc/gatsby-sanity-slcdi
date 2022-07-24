@@ -43,4 +43,7 @@ export const Wrapper = styled.div`
             line-height: inherit;
         }
     }
+    &.sticky.small {
+        min-height: 79px;
+    }
 `;

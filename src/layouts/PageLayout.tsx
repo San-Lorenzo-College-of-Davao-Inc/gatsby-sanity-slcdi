@@ -5,7 +5,6 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 interface Props {
     children: any
 }
@@ -20,10 +19,13 @@ const PageLayout = ({ children }: Props) => {
     <Helmet>
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />
-      <link rel="stylesheet" href="/assets/css/animate.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet" />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     </Helmet>
     </ThemeProvider>
   )

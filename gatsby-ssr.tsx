@@ -9,3 +9,9 @@ export const wrapPageElement: GatsbySSR["wrapPageElement"] = ({ element }) => {
     </PageLayout>
   )
 }
+
+export const onRenderBody: GatsbySSR["onRenderBody"] = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+    <div id="fb-root" key="0"></div>
+  ]);
+};

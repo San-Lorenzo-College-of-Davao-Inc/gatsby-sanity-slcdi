@@ -44,10 +44,8 @@ export const SlideContentTitle = styled.h3`
     line-height: 58px;
     padding-top: 80px;
     text-transform: capitalize;
-    -webkit-animation-delay: 500ms;
     animation-delay: 500ms;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+    animation: fadeInUp;
 `;
 
 export const SlideContentText = styled.p`
@@ -57,8 +55,6 @@ export const SlideContentText = styled.p`
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 35px;
-    -webkit-animation-delay: 1100ms;
     animation-delay: 1100ms;
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+    animation: fadeInUp;
 `;
