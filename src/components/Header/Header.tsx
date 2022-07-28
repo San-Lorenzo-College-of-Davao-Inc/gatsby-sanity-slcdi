@@ -11,7 +11,7 @@ type Props = {
   small?: boolean;
 };
 
-const Header = ({ small = false }: Props) => {
+const Header = ({ small = true }: Props) => {
   const [collapsed, setCollapsed] = React.useState(false);
 
   const ScrollEvent = () => {
@@ -23,6 +23,7 @@ const Header = ({ small = false }: Props) => {
   };
 
   useEffect(() => {
+   
     window.addEventListener("scroll", ScrollEvent);
     return () => {
       window.removeEventListener("scroll", ScrollEvent);
@@ -30,7 +31,7 @@ const Header = ({ small = false }: Props) => {
   }, []);
 
   return (
-    <S.Wrapper className={`${collapsed || small ? `sticky` : ``} ${small ? `small` : ``}`}>
+    <S.Wrapper className={`${collapsed || small ? `sticky` : ``} ${small ? `` : ``}`}>
       <Container className="header">
         <Row>
           <Col>

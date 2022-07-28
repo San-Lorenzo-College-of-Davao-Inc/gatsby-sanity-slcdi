@@ -2,13 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import * as S from './WhyUs.styles';
 
 type Props = {};
 
 const WhyUs = (props: Props) => {
   return (
-    <div className="why-us">
-      <Container>
+    <S.Container>
+      <Container className="py-5">
         <Row>
           <Col>
             <h1>WHY STUDY IN SAN LORENZO COLLEGE OF DAVAO?</h1>
@@ -31,9 +32,12 @@ const WhyUs = (props: Props) => {
               believe that every student can succeed and excel.
             </p>
           </Col>
+          <Col lg="2">
+            <img src="/assets/images/san-lorenzo-image.png" alt="San Lorenzo" />
+          </Col>
         </Row>
       </Container>
-    </div>
+    </S.Container>
   );
 };
 

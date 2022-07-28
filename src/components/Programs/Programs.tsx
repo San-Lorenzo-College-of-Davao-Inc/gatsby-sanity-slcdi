@@ -2,12 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import * as S from './Programs.styles';
 
 type Props = {};
 
 const Programs = (props: Props) => {
   return (
-    <Container className="header">
+    <S.Container>
+    <Container className="py-5">
       <Row>
         <Col>
           <div>Programs</div>
@@ -23,6 +25,7 @@ const Programs = (props: Props) => {
         </Col>
       </Row>
     </Container>
+    </S.Container>
   );
 };
 
